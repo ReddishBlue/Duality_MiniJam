@@ -1987,6 +1987,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 719163046890263028, guid: ee08c0c02dea72e4d9849f4364475d70, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 719163046890263028, guid: ee08c0c02dea72e4d9849f4364475d70, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7119281
+      objectReference: {fileID: 0}
+    - target: {fileID: 719163046890263028, guid: ee08c0c02dea72e4d9849f4364475d70, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8476781992200463115, guid: ee08c0c02dea72e4d9849f4364475d70, type: 3}
       propertyPath: m_Name
       value: PlayerBullet
