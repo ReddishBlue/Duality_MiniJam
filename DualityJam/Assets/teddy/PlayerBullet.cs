@@ -5,7 +5,7 @@ public class PlayerBullet : MonoBehaviour
 {
     private int bulletHP = 5;
     public Rigidbody2D bulletRB;
-    public float speed = 20f;
+    public float speed = 5f;
 
     private Vector2 direction;
 
@@ -16,11 +16,7 @@ public class PlayerBullet : MonoBehaviour
     private void Start() {
         attackAction = InputSystem.actions.FindAction("Attack");
         bulletRB = gameObject.GetComponent<Rigidbody2D>();
-    }
-
-    public void Shoot(Vector2 dir){
-        this.direction = dir;
-        bulletRB.linearVelocity = this.direction * speed;
+      
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -37,7 +33,8 @@ public class PlayerBullet : MonoBehaviour
         } 
 
         Vector2 newVelocity = Vector2.Reflect(direction.normalized, other.contacts[0].normal);
-        Shoot(newVelocity.normalized);
+      
+        speed = -speed;
 
         //isCollided = true; //for testing
     
@@ -49,26 +46,9 @@ public class PlayerBullet : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    // private void Update()
-    // {
-
-    //     Vector2 dir = new Vector2(1f, 0.0f);
-
-    //     if (attackAction.IsPressed())
-    //     {
-    //         Shoot(dir);
-    //     }
-    // }
-
-    // private void Update()
-    // {
+    void Update()
+    {
+        transform.Translate(speed*Time.deltaTime,0,0);
         
-    //     //just to test it out
-    //     // if(!isCollided){
-    //     //     Vector2 dir = new Vector2(1f, 0.0f);
-    //     //     Shoot(dir.normalized);
-    //     // }
-        
-       
-    // }
+    }
 }

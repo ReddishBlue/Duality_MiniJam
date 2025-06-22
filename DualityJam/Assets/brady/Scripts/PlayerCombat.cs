@@ -28,6 +28,7 @@ public class PlayerCombat : MonoBehaviour
         }
         
         GameObject projectile = Instantiate(projectilePrefab, gun.transform.position, gun.transform.rotation);
+    
     }
     
     void OnTriggerEnter2D(Collider2D other)
@@ -64,4 +65,5 @@ public class PlayerCombat : MonoBehaviour
         Debug.DrawLine(gun.transform.position,mousePosition,Color.white,Time.deltaTime);
         return angle;
     }
+
 }

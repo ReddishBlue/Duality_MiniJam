@@ -17,10 +17,10 @@ public class TurretBullet : MonoBehaviour
         bulletRB = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    public void Shoot(Vector2 dir){
-        this.direction = dir;
-        bulletRB.linearVelocity = this.direction * speed;
-    }
+    // public void Shoot(Vector2 dir){
+    //     this.direction = dir;
+    //     bulletRB.linearVelocity = this.direction * speed;
+    // }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -33,15 +33,9 @@ public class TurretBullet : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    // private void Update()
-    // {
-
-    //     Vector2 dir = new Vector2(1f, 0.0f);
-
-    //     if (attackAction.IsPressed())
-    //     {
-    //         Shoot(dir);
-    //     }
-    // }
+    void Update()
+    {
+        transform.Translate(speed*Time.deltaTime,0,0);
+    }
 
 }
