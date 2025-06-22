@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         playerInputActions.Player.Disable();
     }
 
-    private void FixedUpdate() 
+    private void Update() 
     {
         Movement();
         
@@ -49,13 +49,13 @@ public class PlayerMovement : MonoBehaviour
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    private float AngleToCursor()
+    private Vector3 VectorToCursor()
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         // Calculate direction vector from prefab to mouse
         Vector3 direction = mousePosition - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90; //offset by 90 to align with y
-        return angle;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        return direction;
     }
 
     private Vector2 MovePlayer(Vector2 movement)
@@ -82,7 +82,8 @@ public class PlayerMovement : MonoBehaviour
         // }
         
         if(charRenderer != null)
-            charRenderer.SetDirection(movement);
+            charRenderer.SetLookDirection(VectorToCursor());
+            charRenderer.SetMoveDirection(movement);
         rbody.MovePosition(newPos);
 
         return newPos;
