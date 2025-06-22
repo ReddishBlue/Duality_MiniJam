@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Brady.unity
     guid: 9adf3b64eeb665dfe9c0858ab68baf21
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: f273d50c711bfef9ca344c7b6c226ff1
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: f540ede7a6ea1494b9daab7eba34c43a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

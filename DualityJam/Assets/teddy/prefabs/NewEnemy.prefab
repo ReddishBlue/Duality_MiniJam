@@ -312,7 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1754648932838061172, guid: 6381a76ed6778f3499d793297cb68ceb, type: 3}
   spawnPoint: {fileID: 6975081385076261837}
-  enemyFireRate: 0.2
+  enemyFireRate: 0.75
   isOnCooldown: 0
 --- !u!114 &2767979812315958021
 MonoBehaviour:
@@ -327,9 +327,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  rotationSpeed: 100
+  rotationSpeed: 40
   sightSensor: {fileID: 5827087957328288939}
   enemyCombat: {fileID: 3065841153505964792}
+  angleMin: 90
+  angleMax: 270
 --- !u!114 &5827087957328288939
 MonoBehaviour:
   m_ObjectHideFlags: 0
