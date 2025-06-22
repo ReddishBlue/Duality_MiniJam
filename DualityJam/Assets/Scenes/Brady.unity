@@ -661,7 +661,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -860,7 +860,23 @@ PrefabInstance:
       value: 0.1392286
       objectReference: {fileID: 0}
     - target: {fileID: 6580800289858348260, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
+      propertyPath: m_Size.x
+      value: 0.1640625
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580800289858348260, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
+      propertyPath: m_Size.y
+      value: 0.05078125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580800289858348260, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1268187858265992155, guid: 65bd2050e9674a9658ebe92591b27152, type: 3}
+    - target: {fileID: 6580800289858348260, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
       propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580800289858348260, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7788579251562415591, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
@@ -902,6 +918,14 @@ PrefabInstance:
     - target: {fileID: 7788579251562415591, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7950329267931692464, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0038
+      objectReference: {fileID: 0}
+    - target: {fileID: 7950329267931692464, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1108
       objectReference: {fileID: 0}
     - target: {fileID: 8746922299709925410, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
       propertyPath: m_Name
