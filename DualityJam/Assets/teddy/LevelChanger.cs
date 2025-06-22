@@ -15,11 +15,18 @@ public class LevelChanger : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other){
-        int sceneID = SceneManager.GetActiveScene().buildIndex;
+    private void OnCollisionEnter2D(Collision2D other){
 
-        if (SceneManager.GetSceneByBuildIndex(sceneID + 1).IsValid()){
-            SceneManager.LoadScene(sceneID + 1);
+        Debug.Log("collided with door!");
+        if (other.gameObject.tag == "Player"){
+            int sceneID = SceneManager.GetActiveScene().buildIndex;
+            
+
+            if (SceneManager.GetSceneByBuildIndex(sceneID + 1).IsValid()){
+                SceneManager.LoadScene(sceneID + 1);
+                Debug.Log("scene loaded!");
+            }
+
         }
     
     }
