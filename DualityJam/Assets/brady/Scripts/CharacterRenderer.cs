@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 
 public class MyCharacterRenderer : MonoBehaviour
 {
 
     public static readonly string[] staticDirections = { "Static N", "Static W","Static S", "Static E" };
     public static readonly string[] runDirections = {"Run N", "Run W", "Run S", "Run E"};
+    public static readonly string[] runDirectionsFlipped = {"Flip Run N", "Flip Run W", "Flip Run S", "Flip Run E"};
+    private int lastLookDirection;
+    private int lastMoveDirection;
 
     Animator animator;
     int lastDirection;
@@ -19,7 +22,7 @@ public class MyCharacterRenderer : MonoBehaviour
     }
 
 
-    public void SetDirection(Vector2 direction){
+    public void SetMoveDirection(Vector2 direction){
 
         //use the Run states by default
         string[] directionArray = null;
@@ -37,15 +40,35 @@ public class MyCharacterRenderer : MonoBehaviour
             //use DirectionToIndex to get the index of the slice from the direction vector
             //save the answer to lastDirection
             directionArray = runDirections;
-            lastDirection = DirectionToIndex(direction, 4);
+            lastMoveDirection = DirectionToIndex(direction, 4);
         }
-        Debug.Log(directionArray[lastDirection]);
+        // Debug.Log(directionArray[lastDirection]);
         //tell the animator to play the requested state
-        animator.Play(directionArray[lastDirection]);
+        playAnimation(directionArray);
+    }
+
+    public void SetLookDirection(Vector2 direction)
+    {
+        lastLookDirection = DirectionToIndex(direction, 4);
     }
 
     //helper functions
 
+
+    public void playAnimation(string[] directionArray)
+    {
+        if (Math.Abs(lastMoveDirection - lastLookDirection) == 2)
+        {
+            if (directionArray == runDirections)
+            {
+                Debug.Log("flipped");
+                directionArray = runDirectionsFlipped;
+            }
+        }
+        // Debug.Log(staticDirections[lastLookDirection]);
+        Debug.Log(directionArray[lastLookDirection]);
+        animator.Play(directionArray[lastLookDirection]);
+    }
     //this function converts a Vector2 direction to an index to a slice around a circle
     //this goes in a counter-clockwise direction.
     public static int DirectionToIndex(Vector2 dir, int sliceCount){

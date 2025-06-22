@@ -19,12 +19,14 @@ public class PlayerCombat : MonoBehaviour
 
     void Awake() {
         playerHealth = gameObject.GetComponent<PlayerHealth>(); 
+        
     }
     public void OnFire()
     {
         if (projectilePrefab == null) {
             Debug.LogError("No projectile prefab!");
         }
+        
         GameObject projectile = Instantiate(projectilePrefab, gun.transform.position, gun.transform.rotation);
     }
     
@@ -46,6 +48,7 @@ public class PlayerCombat : MonoBehaviour
     private void GunTrackMouse()
      {
          float angle = AngleToCursor();
+         // Debug.Log(angle);
          gun.transform.rotation = Quaternion.Euler(0, 0, angle);
          
 
@@ -55,8 +58,9 @@ public class PlayerCombat : MonoBehaviour
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         // Calculate direction vector from prefab to mouse
-        Vector3 direction = mousePosition - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90; //offset by 90 to align with y
+        Vector3 direction = mousePosition - gun.transform.position;
+        Debug.Log(direction);
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
         Debug.DrawLine(gun.transform.position,mousePosition,Color.white,Time.deltaTime);
         return angle;
     }

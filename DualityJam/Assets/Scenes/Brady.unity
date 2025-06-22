@@ -432,11 +432,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9ee31283f6174f4a972c04bdc6d9331, type: 3}
---- !u!1 &417012554 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8746922299709925410, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-  m_PrefabInstance: {fileID: 1394821742}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &552478330
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,38 +826,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1238964470314560120, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: m_Size.x
-      value: 0.10517696
-      objectReference: {fileID: 0}
-    - target: {fileID: 1238964470314560120, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: m_Size.y
-      value: 0.03406069
-      objectReference: {fileID: 0}
-    - target: {fileID: 1238964470314560120, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.009276625
-      objectReference: {fileID: 0}
-    - target: {fileID: 1238964470314560120, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.05355047
-      objectReference: {fileID: 0}
-    - target: {fileID: 4328508684630788607, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: m_Radius
-      value: 0.09139316
-      objectReference: {fileID: 0}
-    - target: {fileID: 4328508684630788607, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0014387071
-      objectReference: {fileID: 0}
-    - target: {fileID: 4328508684630788607, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.1392286
-      objectReference: {fileID: 0}
-    - target: {fileID: 6580800289858348260, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7788579251562415591, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.202
@@ -910,13 +873,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8746922299709925410, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      insertIndex: 5
-      addedObject: {fileID: 1756554347}
-    - targetCorrespondingSourceObject: {fileID: 8746922299709925410, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1756554348}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
 --- !u!1 &1562267482
 GameObject:
@@ -1057,40 +1014,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7788579251562415591, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
   m_PrefabInstance: {fileID: 1394821742}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1756554347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417012554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd65b6d1d2e6fe32f8e8a8b096c1227a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &1756554348
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417012554}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aa5dde58b686d9a2fad43300c1e1bee0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1774167659
 GameObject:
   m_ObjectHideFlags: 0
