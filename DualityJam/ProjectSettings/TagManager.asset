@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Walls
   - LevelChanger
+  - Enemy Attack
+  - Player Attack
+  - Enemy
+  - Player Weapon
   layers:
   - Default
   - TransparentFX
