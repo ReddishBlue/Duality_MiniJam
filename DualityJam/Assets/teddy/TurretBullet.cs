@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class TurretBullet : MonoBehaviour
 {
     public Rigidbody2D bulletRB;
-    public float speed = 20f;
+    public float speed = 5f;
 
     private Vector2 direction;
 
@@ -36,7 +36,7 @@ public class TurretBullet : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(speed*Time.deltaTime,0,0);
+        transform.Translate(0,speed*Time.deltaTime,0);
     }
 
 }
