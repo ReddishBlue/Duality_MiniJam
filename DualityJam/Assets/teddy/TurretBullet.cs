@@ -26,14 +26,22 @@ public class TurretBullet : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
-
-    private void Update() {
-
-        Vector2 dir = new Vector2(1f, 0.0f);
-
-        if (attackAction.IsPressed()){
-            Shoot(dir);
-        }
+    
+    //When projectile goes offscreen destroy it
+    void OnBecameInvisible() 
+    {
+        Destroy(this.gameObject);
     }
+
+    // private void Update()
+    // {
+
+    //     Vector2 dir = new Vector2(1f, 0.0f);
+
+    //     if (attackAction.IsPressed())
+    //     {
+    //         Shoot(dir);
+    //     }
+    // }
 
 }
