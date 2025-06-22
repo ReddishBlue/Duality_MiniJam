@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - Player Weapon
 >>>>>>> brady
+  - LevelChanger
   layers:
   - Default
   - TransparentFX

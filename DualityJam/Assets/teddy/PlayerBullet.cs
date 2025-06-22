@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerBullet : MonoBehaviour
 {
@@ -8,10 +9,17 @@ public class PlayerBullet : MonoBehaviour
 
     private Vector2 direction;
 
+    InputAction attackAction;
+
     //public bool isCollided = false; //for testing
 
-    public void Shoot(Vector2 direction){
-        this.direction = direction;
+    private void Start() {
+        attackAction = InputSystem.actions.FindAction("Attack");
+        bulletRB = gameObject.GetComponent<Rigidbody2D>();
+    }
+
+    public void Shoot(Vector2 dir){
+        this.direction = dir;
         bulletRB.linearVelocity = this.direction * speed;
     }
 
@@ -35,15 +43,24 @@ public class PlayerBullet : MonoBehaviour
     
     }
 
-    private void Update()
-    {
+    private void Update() {
+
+        Vector2 dir = new Vector2(1f, 0.0f);
+
+        if (attackAction.IsPressed()){
+            Shoot(dir);
+        }
+    }
+
+    // private void Update()
+    // {
         
-        //just to test it out
-        // if(!isCollided){
-        //     Vector2 dir = new Vector2(1f, 0.0f);
-        //     Shoot(dir.normalized);
-        // }
+    //     //just to test it out
+    //     // if(!isCollided){
+    //     //     Vector2 dir = new Vector2(1f, 0.0f);
+    //     //     Shoot(dir.normalized);
+    //     // }
         
        
-    }
+    // }
 }
