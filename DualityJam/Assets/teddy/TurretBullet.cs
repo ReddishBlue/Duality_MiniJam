@@ -13,14 +13,9 @@ public class TurretBullet : MonoBehaviour
     //public bool isCollided = false; //for testing
 
     private void Start() {
-        attackAction = InputSystem.actions.FindAction("Attack");
-        bulletRB = gameObject.GetComponent<Rigidbody2D>();
+       // attackAction = InputSystem.actions.FindAction("Attack");
+       
     }
-
-    // public void Shoot(Vector2 dir){
-    //     this.direction = dir;
-    //     bulletRB.linearVelocity = this.direction * speed;
-    // }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
