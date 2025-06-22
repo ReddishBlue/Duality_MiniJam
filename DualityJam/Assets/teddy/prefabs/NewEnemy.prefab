@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7030088414611567121}
   - component: {fileID: 6315335851301975552}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Direction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 3065841153505964792}
   - component: {fileID: 2767979812315958021}
   - component: {fileID: 5827087957328288939}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: NewEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -313,8 +313,8 @@ MonoBehaviour:
   angle: 45
   objectsLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 128
   obstaclesLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   detectedObject: {fileID: 0}

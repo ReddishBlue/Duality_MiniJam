@@ -17,7 +17,7 @@ public class LevelChanger : MonoBehaviour
 
     private void  OnTriggerEnter2D(Collider2D other){
 
-        Debug.Log("collided with door!");
+        //Debug.Log("collided with door!");
         if (other.gameObject.tag == "Player"){
             int sceneID = SceneManager.GetActiveScene().buildIndex;
             
