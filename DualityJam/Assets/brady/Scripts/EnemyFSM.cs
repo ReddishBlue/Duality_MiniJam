@@ -14,6 +14,9 @@ public class EnemyFSM : MonoBehaviour
     public EnemyAISight sightSensor;
     public EnemyCombat enemyCombat;
 
+    public float angleMin = 90;
+    public float angleMax = 270;
+
     void Update()
     {
         if (currentState == EnemyState.Scanning) {
@@ -30,12 +33,12 @@ public class EnemyFSM : MonoBehaviour
             return;
         }
         
-        if(transform.rotation.eulerAngles.z >= 270)
+        if(transform.rotation.eulerAngles.z >= angleMax)
         {
             rotationDirection = -1;
             
         }
-        if(transform.rotation.eulerAngles.z <= 90)
+        if(transform.rotation.eulerAngles.z <= angleMin)
         {
             rotationDirection = 1;
         }
