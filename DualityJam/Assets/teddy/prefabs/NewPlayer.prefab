@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8476781992200463115, guid: ee08c0c02dea72e4d9849f4364475d70, type: 3}
+  spawnPoint: {fileID: 8099812867905424539}
   damageToTake: 1
   gun: {fileID: 2853393561821358161}
 --- !u!114 &965229277899034359
@@ -246,7 +247,7 @@ Rigidbody2D:
   m_UseAutoMass: 1
   m_Mass: 0.053334944
   m_LinearDamping: 100
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1000
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -332,11 +333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4953028546661469535, guid: 7eaa39b0472883744830484a4182f86c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 0.0183
       objectReference: {fileID: 0}
     - target: {fileID: 4953028546661469535, guid: 7eaa39b0472883744830484a4182f86c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.14
+      value: 0.144
       objectReference: {fileID: 0}
     - target: {fileID: 4953028546661469535, guid: 7eaa39b0472883744830484a4182f86c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -383,5 +384,10 @@ GameObject:
 --- !u!4 &7950329267931692464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4953028546661469535, guid: 7eaa39b0472883744830484a4182f86c, type: 3}
+  m_PrefabInstance: {fileID: 3092160262591344879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8099812867905424539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6521739492279319668, guid: 7eaa39b0472883744830484a4182f86c, type: 3}
   m_PrefabInstance: {fileID: 3092160262591344879}
   m_PrefabAsset: {fileID: 0}

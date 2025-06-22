@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
     public GameObject projectilePrefab;
+    public GameObject spawnPoint;
     
     public int damageToTake = 1; 
     private PlayerHealth playerHealth;
@@ -27,22 +28,23 @@ public class PlayerCombat : MonoBehaviour
             Debug.LogError("No projectile prefab!");
         }
         
-        GameObject projectile = Instantiate(projectilePrefab, gun.transform.position, gun.transform.rotation);
+        GameObject projectile = Instantiate(projectilePrefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
     
     }
-    
+
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (this.gameObject.tag == "Player" && other.gameObject.tag == "Enemy Attack")
+        if (this.gameObject.tag == "Player" && (other.gameObject.tag == "Enemy Attack" || other.gameObject.tag == "Player Attack"))
         {
-                playerHealth.currentHealth -= damageToTake;
-                Destroy(other.gameObject);
-                if(playerHealth.currentHealth <= 0)
-                {
-                    Destroy(this.gameObject);
-                }
+            playerHealth.currentHealth -= damageToTake;
+            Destroy(other.gameObject);
+            if (playerHealth.currentHealth <= 0)
+            {
+                Destroy(this.gameObject);
+            }
         }
+    
     }
     
     
