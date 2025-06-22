@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerInputActions = new DualityJamActions();
         rbody = GetComponent<Rigidbody2D>();
-        charRenderer = GetComponentInChildren<MyCharacterRenderer>();
+        charRenderer = GetComponent<MyCharacterRenderer>();
 
     }
 
