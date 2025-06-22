@@ -61,12 +61,12 @@ public class MyCharacterRenderer : MonoBehaviour
         {
             if (directionArray == runDirections)
             {
-                Debug.Log("flipped");
+                // Debug.Log("flipped");
                 directionArray = runDirectionsFlipped;
             }
         }
         // Debug.Log(staticDirections[lastLookDirection]);
-        Debug.Log(directionArray[lastLookDirection]);
+        // Debug.Log(directionArray[lastLookDirection]);
         animator.Play(directionArray[lastLookDirection]);
     }
     //this function converts a Vector2 direction to an index to a slice around a circle

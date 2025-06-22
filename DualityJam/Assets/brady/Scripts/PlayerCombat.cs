@@ -59,7 +59,7 @@ public class PlayerCombat : MonoBehaviour
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         // Calculate direction vector from prefab to mouse
         Vector3 direction = mousePosition - gun.transform.position;
-        Debug.Log(direction);
+        // Debug.Log(direction);
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
         Debug.DrawLine(gun.transform.position,mousePosition,Color.white,Time.deltaTime);
         return angle;
