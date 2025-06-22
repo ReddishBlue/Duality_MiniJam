@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d7b9ae954535f4eb8fddd517650515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 3.5
+  movementSpeed: 50
   charRenderer: {fileID: 0}
   playerCombat: {fileID: 0}
 --- !u!114 &6110418164540794605
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96feefc50acc4e42942b38905d7fa90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 2587298245853041606, guid: df708ab07120e5c4386e9dd0b2c624df, type: 3}
+  projectilePrefab: {fileID: 8476781992200463115, guid: ee08c0c02dea72e4d9849f4364475d70, type: 3}
   damageToTake: 1
   gun: {fileID: 2853393561821358161}
 --- !u!114 &965229277899034359
@@ -330,9 +330,9 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 10
-  m_LinearDamping: 0
+  m_UseAutoMass: 1
+  m_Mass: 0.053334944
+  m_LinearDamping: 100
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

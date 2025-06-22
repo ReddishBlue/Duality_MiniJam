@@ -331,10 +331,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3065841153505964792, guid: a9ee31283f6174f4a972c04bdc6d9331, type: 3}
-      propertyPath: projectilePrefab
-      value: 
-      objectReference: {fileID: 1754648932838061172, guid: 6381a76ed6778f3499d793297cb68ceb, type: 3}
     - target: {fileID: 3692760104428290972, guid: a9ee31283f6174f4a972c04bdc6d9331, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -778,26 +774,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4110325550573988172, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: movementSpeed
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5654887434559557024, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: m_Mass
-      value: 0.053334944
-      objectReference: {fileID: 0}
-    - target: {fileID: 5654887434559557024, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5654887434559557024, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: m_LinearDamping
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6110418164540794605, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
-      propertyPath: projectilePrefab
-      value: 
-      objectReference: {fileID: 8476781992200463115, guid: ee08c0c02dea72e4d9849f4364475d70, type: 3}
     - target: {fileID: 7788579251562415591, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.202
