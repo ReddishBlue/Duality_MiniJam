@@ -4,17 +4,24 @@
 TagManager:
   serializedVersion: 3
   tags:
+<<<<<<< HEAD
   - Walls
+=======
+  - Enemy Attack
+  - Player Attack
+  - Enemy
+  - Player Weapon
+>>>>>>> brady
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - enemies
   - Water
   - UI
-  - 
-  - 
-  - 
+  - walls
+  - player
+  - attack
   - 
   - 
   - 
