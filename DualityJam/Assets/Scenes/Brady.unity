@@ -778,6 +778,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4110325550573988172, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
+      propertyPath: movementSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654887434559557024, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
+      propertyPath: m_Mass
+      value: 0.053334944
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654887434559557024, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654887434559557024, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
+      propertyPath: m_LinearDamping
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6110418164540794605, guid: 56a6e65362dc8e94b8e13bcf2ff5c7a2, type: 3}
       propertyPath: projectilePrefab
       value: 
