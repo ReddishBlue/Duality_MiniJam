@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         playerInputActions.Player.Disable();
     }
 
-    private void Update() 
+    private void FixedUpdate() 
     {
         Movement();
         
@@ -84,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
         if(charRenderer != null)
             charRenderer.SetLookDirection(VectorToCursor());
             charRenderer.SetMoveDirection(movement);
-        rbody.AddForce(movement*Time.fixedDeltaTime);
+        rbody.MovePosition(newPos);
 
         return newPos;
     }
