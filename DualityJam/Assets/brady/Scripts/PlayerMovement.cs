@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float movementSpeed = 50f;
+    public float movementSpeed = 100f;
     
     private DualityJamActions playerInputActions;
     // public Animator animator;

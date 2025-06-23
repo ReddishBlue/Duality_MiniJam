@@ -42,7 +42,8 @@ public class PlayerCombat : MonoBehaviour
             Destroy(other.gameObject);
             if (playerHealth.currentHealth <= 0)
             {
-                SceneManager.LoadScene("start");
+                playerHealth.currentHealth = playerHealth.maxHealth;
+                SceneManager.LoadScene("restart");
                 Destroy(this.gameObject);
             }
         }

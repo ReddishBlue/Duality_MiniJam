@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/start.unity
     guid: 8307b379467c1640eb14a7ee29d94baa
+  - enabled: 1
+    path: Assets/Scenes/restart.unity
+    guid: b373d34274ab866eba5be087e4ec2db9
   - enabled: 0
     path: Assets/Scenes/Brady.unity
     guid: 9adf3b64eeb665dfe9c0858ab68baf21
@@ -25,7 +28,7 @@ EditorBuildSettings:
     guid: f273d50c711bfef9ca344c7b6c226ff1
   - enabled: 1
     path: Assets/Scenes/end.unity
-    guid: 59c9c2b77e9d2ae43a9c4c890c81c2d3
+    guid: 24e32585929003d45aa41cb960b0410e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
