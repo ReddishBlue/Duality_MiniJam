@@ -23,7 +23,6 @@ public class LevelChanger : MonoBehaviour
         if (other.gameObject.tag == "Player"){
             int sceneID = SceneManager.GetActiveScene().buildIndex;
 
-            Debug.Log(SceneManager.sceneCountInBuildSettings);
             if (sceneID + 1 < SceneManager.sceneCountInBuildSettings){
                 SceneManager.LoadScene(sceneID + 1);
                 Debug.Log("scene loaded!");
