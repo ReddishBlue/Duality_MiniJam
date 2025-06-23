@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        DontDestroyOnLoad(this.gameObject);
     }
 }
 

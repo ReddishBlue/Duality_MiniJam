@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -19,8 +20,8 @@ public class PlayerCombat : MonoBehaviour
     }
 
     void Awake() {
-        playerHealth = gameObject.GetComponent<PlayerHealth>(); 
-        
+        // playerHealth = gameObject.GetComponent<PlayerHealth>(); 
+        playerHealth = GameObject.FindGameObjectWithTag("Saved Info").GetComponent<PlayerHealth>();   
     }
     public void OnFire()
     {
@@ -41,6 +42,7 @@ public class PlayerCombat : MonoBehaviour
             Destroy(other.gameObject);
             if (playerHealth.currentHealth <= 0)
             {
+                SceneManager.LoadScene("start");
                 Destroy(this.gameObject);
             }
         }

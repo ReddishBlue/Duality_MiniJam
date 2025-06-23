@@ -369,7 +369,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NewPlayer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 965229277899034359, guid: 15b82e2a17c690043873da7269556202, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7788579251562415591, guid: 15b82e2a17c690043873da7269556202, type: 3}
@@ -509,6 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6639ccd234b3d1b4f886934ad44f03c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: Level2
 --- !u!483693784 &1165464182
 TilemapRenderer:
   m_ObjectHideFlags: 0

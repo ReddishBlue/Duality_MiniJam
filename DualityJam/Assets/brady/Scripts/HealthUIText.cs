@@ -21,7 +21,7 @@ public class HealthUIText : MonoBehaviour
     }
 
     public void ReferencePlayerHealth() {
-        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();   
+        playerHealth = GameObject.FindGameObjectWithTag("Saved Info").GetComponent<PlayerHealth>();   
     }
 
 }
