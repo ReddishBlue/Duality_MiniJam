@@ -6,9 +6,9 @@ using System;
 public class MyCharacterRenderer : MonoBehaviour
 {
 
-    public static readonly string[] staticDirections = { "Static N", "Static W","Static S", "Static E" };
-    public static readonly string[] runDirections = {"Run N", "Run W", "Run S", "Run E"};
-    public static readonly string[] runDirectionsFlipped = {"Flip Run N", "Flip Run W", "Flip Run S", "Flip Run E"};
+    public static readonly string[] staticDirections = {  "Static W", "Static E" };
+    public static readonly string[] runDirections = {"Run W", "Run E"};
+    public static readonly string[] runDirectionsFlipped = {"Flip Run W", "Flip Run E"};
     private int lastLookDirection;
     private int lastMoveDirection;
 
@@ -40,7 +40,7 @@ public class MyCharacterRenderer : MonoBehaviour
             //use DirectionToIndex to get the index of the slice from the direction vector
             //save the answer to lastDirection
             directionArray = runDirections;
-            lastMoveDirection = DirectionToIndex(direction, 4);
+            lastMoveDirection = DirectionToIndex(direction, 2);
         }
         // Debug.Log(directionArray[lastDirection]);
         //tell the animator to play the requested state
@@ -49,7 +49,7 @@ public class MyCharacterRenderer : MonoBehaviour
 
     public void SetLookDirection(Vector2 direction)
     {
-        lastLookDirection = DirectionToIndex(direction, 4);
+        lastLookDirection = DirectionToIndex(direction, 2);
     }
 
     //helper functions
@@ -57,7 +57,7 @@ public class MyCharacterRenderer : MonoBehaviour
 
     public void playAnimation(string[] directionArray)
     {
-        if (Math.Abs(lastMoveDirection - lastLookDirection) == 2)
+        if (Math.Abs(lastMoveDirection - lastLookDirection) == 1)
         {
             if (directionArray == runDirections)
             {
@@ -83,7 +83,7 @@ public class MyCharacterRenderer : MonoBehaviour
         //this will return the angle between dir and North.
         float angle = Vector2.SignedAngle(Vector2.up, normDir);
         //add the halfslice offset
-        angle += halfstep;
+        // angle += halfstep;
         //if angle is negative, then let's make it positive by adding 360 to wrap it around.
         if (angle < 0){
             angle += 360;
