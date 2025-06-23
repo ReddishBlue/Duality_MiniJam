@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d7b9ae954535f4eb8fddd517650515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 100
+  movementSpeed: 3.5
   charRenderer: {fileID: 0}
   playerCombat: {fileID: 0}
 --- !u!114 &6110418164540794605
