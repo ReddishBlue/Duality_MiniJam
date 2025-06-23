@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13eac0d4b5674f6b8458fe1c133b4eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
+  maxHealth: 20
   currentHealth: 0
 --- !u!50 &5654887434559557024
 Rigidbody2D:
@@ -247,7 +247,7 @@ Rigidbody2D:
   m_UseAutoMass: 1
   m_Mass: 0.053334944
   m_LinearDamping: 100
-  m_AngularDamping: 1000
+  m_AngularDamping: 100000
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -259,7 +259,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &1238964470314560120
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
