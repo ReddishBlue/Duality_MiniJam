@@ -20,9 +20,9 @@ public class LevelChanger : MonoBehaviour
         //Debug.Log("collided with door!");
         if (other.gameObject.tag == "Player"){
             int sceneID = SceneManager.GetActiveScene().buildIndex;
-            
 
-            if (SceneManager.GetSceneByBuildIndex(sceneID + 1).IsValid()){
+            Debug.Log(SceneManager.sceneCountInBuildSettings);
+            if (sceneID + 1 < SceneManager.sceneCountInBuildSettings){
                 SceneManager.LoadScene(sceneID + 1);
                 Debug.Log("scene loaded!");
             }
